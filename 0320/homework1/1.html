@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<input type="number" id="Mydata1"value=1>
+<input type="number" id="Mydata2"value=3>
+
+<script>
+	function add(){
+		var x,y
+		x=parseFloat(document.getElementById("Mydata1").value);
+		y=parseFloat(document.getElementById("Mydata2").value);
+		document.getElementById("result").innerHTML=x+y;
+	}
+
+	function minus(){
+		var x,y
+		x=parseFloat(document.getElementById("Mydata1").value);
+		y=parseFloat(document.getElementById("Mydata2").value);
+		document.getElementById("result").innerHTML=x-y;
+	}
+
+	function multiply(){
+		var x,y
+		x=parseFloat(document.getElementById("Mydata1").value);
+		y=parseFloat(document.getElementById("Mydata2").value);
+		document.getElementById("result").innerHTML=x*y;
+	}
+
+	function divided(){
+		var x,y
+		x=parseFloat(document.getElementById("Mydata1").value);
+		y=parseFloat(document.getElementById("Mydata2").value);
+		document.getElementById("result").innerHTML=x/y;
+	}
+
+	// function clear(){
+	// 	Mydata1.value=''
+	// 	Mydata2.value=''
+	// 	result.value= ''
+	// }
+
+</script>
+
+<input type="button" value=" C " onclick="result.value = '',Mydata1.value='',Mydata2.value='' " />
+<!-- <button onclick="clear()">C</button> -->
+<button onclick="add()">加</button>
+<button onclick="minus()">減</button>
+<button onclick="multiply()">乘</button>
+<button onclick="divided()">除</button>
+
+<h5>計算結果:</h5>
+<output id="result"></output>
+</body>
+</html>
